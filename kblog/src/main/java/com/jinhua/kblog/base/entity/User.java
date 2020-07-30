@@ -1,4 +1,4 @@
-package com.jinhua.kblog.entity;
+package com.jinhua.kblog.base.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -64,12 +64,7 @@ public class User implements Serializable {
     /**
      * 文章数量
      */
-    private int posts;
-
-    /**
-     * 评论数量
-     */
-    private int comments;
+    private int articles;
 
     /**
      * 注册时间
@@ -156,20 +151,12 @@ public class User implements Serializable {
         this.phone = phone;
     }
 
-    public int getPosts() {
-        return posts;
+    public int getArticles() {
+        return articles;
     }
 
-    public void setPosts(int posts) {
-        this.posts = posts;
-    }
-
-    public int getComments() {
-        return comments;
-    }
-
-    public void setComments(int comments) {
-        this.comments = comments;
+    public void setArticles(int articles) {
+        this.articles = articles;
     }
 
     public Date getCreated() {

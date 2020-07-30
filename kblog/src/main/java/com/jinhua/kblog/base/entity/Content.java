@@ -1,4 +1,4 @@
-package com.jinhua.kblog.entity;
+package com.jinhua.kblog.base.entity;
 
 import org.hibernate.annotations.Type;
 

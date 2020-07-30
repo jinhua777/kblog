@@ -1,9 +1,7 @@
-package com.jinhua.kblog.entity;
-
-import org.hibernate.search.annotations.Field;
+package com.jinhua.kblog.base.entity;
 
 import javax.persistence.*;
-import java.sql.Statement;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -11,7 +9,9 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "kto_article")
-public class Article {
+public class Article implements Serializable {
+
+    private static final long serialVersionUID = -299598934343185548L;
 
     /**
      * 博文id
